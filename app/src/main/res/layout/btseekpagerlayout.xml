@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="100sp">
+        <ImageView
+            android:background="#fff"
+            android:id="@+id/showBackGround_img_main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/showMyBtInfo_txt_main"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="40sp" />
+            <Button
+                android:text="一键查询附近蓝牙设备"
+                android:textSize="15sp"
+                android:gravity="center"
+                android:textColor="#fff"
+                android:background="@drawable/round_button"
+                android:id="@+id/seekingForBt_button_main"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="60sp" />
+        </LinearLayout>
+    </FrameLayout>
+    <ListView
+        android:id="@+id/showSeekBtInfo_listview_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </ListView>
+
+
+
+</LinearLayout>

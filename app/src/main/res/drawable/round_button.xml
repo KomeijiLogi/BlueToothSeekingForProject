@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+       android:shape="rectangle">
+    <!--填充色-->
+    <solid android:color="#355eff"></solid>
+    <!--设置按钮四角为弧度-->
+    <corners android:radius="20dp"></corners>
+    <!--设置padding,控制按钮中字符与按钮边界的距离-->
+    <padding
+        android:left="10dp"
+        android:right="10dp"
+        android:top="10dp"
+        android:bottom="10dp">
+    </padding>
+    <!--设置边框颜色及宽度-->
+    <stroke
+        android:color="#252734"
+        android:width="5dp">
+
+    </stroke>
+</shape>
