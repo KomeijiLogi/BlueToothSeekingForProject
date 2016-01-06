@@ -1,14 +1,26 @@
 package adapter;
 
+import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.TextView;
+
+import com.example.administrator.bluetoothseekingforproject.R;
+
+import java.util.List;
+
+import entry.BtInfo;
 
 /**
  * Created by Administrator on 2015/12/31.
  */
 public class BTBaseAdapter extends BaseAdapter {
+    private Context context;
+    private List<BtInfo> btdata;
+
+
     /**
      * How many items are in the data set represented by this Adapter.
      *
@@ -16,7 +28,7 @@ public class BTBaseAdapter extends BaseAdapter {
      */
     @Override
     public int getCount() {
-        return 0;
+        return btdata.size();
     }
 
     /**
@@ -28,7 +40,7 @@ public class BTBaseAdapter extends BaseAdapter {
      */
     @Override
     public Object getItem(int position) {
-        return null;
+        return btdata.get(position);
     }
 
     /**
@@ -62,6 +74,27 @@ public class BTBaseAdapter extends BaseAdapter {
      */
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
-        return null;
+        ViewHold vh=null;
+        View v;
+        if(convertView==null){
+            vh=new ViewHold();
+            convertView=LayoutInflater.from(context).inflate(R.layout.fill_bt_listview,null);
+            vh.btname= (TextView) convertView.findViewById(R.id.bluetooth_name_txt);
+            vh.distance= (TextView) convertView.findViewById(R.id.bluetooth_distance_txt);
+            convertView.setTag(vh);
+        }else {
+            vh= (ViewHold) convertView.getTag();
+        }
+        BtInfo btInfo=btdata.get(position);
+        vh.btname.setText(btInfo.getBtname());
+        vh.distance.setText(btInfo.getDistance());
+
+        return convertView;
     }
+
+    public class ViewHold{
+        public TextView btname;
+        public TextView distance;
+    }
+
 }

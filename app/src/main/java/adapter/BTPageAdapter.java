@@ -26,6 +26,7 @@ public class BTPageAdapter extends PagerAdapter {
      */
     @Override
     public boolean isViewFromObject(View view, Object object) {
-        return false;
+        return view==object;
     }
+
 }
