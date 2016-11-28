@@ -26,4 +26,4 @@
             android:visibility="gone" />
     </FrameLayout>
 
-</merge><!-- From: file:/E:/Users/Administrator/AndroidStudioProjects/BlueToothSeekingForProject/PullToRefresh/src/main/res/layout/pull_to_refresh_header_horizontal.xml -->
+</merge>

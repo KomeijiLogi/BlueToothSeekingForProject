@@ -20,6 +20,10 @@ public class BTBaseAdapter extends BaseAdapter {
     private Context context;
     private List<BtInfo> btdata;
 
+    public BTBaseAdapter(Context context, List<BtInfo> btdata) {
+        this.context = context;
+        this.btdata = btdata;
+    }
 
     /**
      * How many items are in the data set represented by this Adapter.
@@ -80,21 +84,21 @@ public class BTBaseAdapter extends BaseAdapter {
             vh=new ViewHold();
             convertView=LayoutInflater.from(context).inflate(R.layout.fill_bt_listview,null);
             vh.btname= (TextView) convertView.findViewById(R.id.bluetooth_name_txt);
-            vh.distance= (TextView) convertView.findViewById(R.id.bluetooth_distance_txt);
+            //vh.rssi= (TextView) convertView.findViewById(R.id.bluetooth_rssi_txt);
             convertView.setTag(vh);
         }else {
             vh= (ViewHold) convertView.getTag();
         }
         BtInfo btInfo=btdata.get(position);
         vh.btname.setText(btInfo.getBtname());
-        vh.distance.setText(btInfo.getDistance());
+        //vh.rssi.setText(btInfo.getRssi());
 
         return convertView;
     }
 
     public class ViewHold{
         public TextView btname;
-        public TextView distance;
+        //public TextView rssi;
     }
 
 }

@@ -4,4 +4,22 @@
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
     <string name="title_activity_main_page">BlueTooth追踪器</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_settings">Settings</string>
+    <string name="title_activity_check_version">CheckVersion</string>
+    <string name="title_activity_blue_tooth_info_page">BlueToothInfoPage</string>
+    <string name="title_activity_more_page">MorePage</string>
+    <string name="title_activity_download_apk">DownloadApk</string>
+    <string name="title_activity_detail_distance">DetailDistance</string>
+
+<!--BluetoothChat-->
+    <string name="send">Send</string>
+    <string name="not_connected">You are not connected to a device</string>
+    <string name="bt_not_enabled_leaving">Bluetooth was not enabled. Leaving Bluetooth Chat.</string>
+    <string name="title_connecting">connecting...</string>
+    <string name="title_connected_to">connected to device</string>
+    <string name="title_not_connected">not connected</string>
+
 </resources>

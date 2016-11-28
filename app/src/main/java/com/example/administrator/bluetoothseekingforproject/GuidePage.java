@@ -14,8 +14,10 @@ public class GuidePage extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_guide_page);
+        /*隐藏ActionBar*/
         ab=getSupportActionBar();
         ab.hide();
+        /*使用线程，引导页2秒后跳转*/
         new Thread(new Runnable() {
             @Override
             public void run() {

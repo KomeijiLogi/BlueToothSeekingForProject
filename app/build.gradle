@@ -23,4 +23,9 @@ dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
     compile 'com.android.support:appcompat-v7:22.1.1'
     compile project(':PullToRefresh')
+    compile files('libs/android_volley.jar')
+    compile files('libs/greendao-1.3.0-beta-1.jar')
+    compile files('libs/gson-2.2.4.jar')
+    compile files('libs/jpush-sdk-release1.8.2.jar')
+    compile files('libs/universal-image-loader-1.9.4.jar')
 }

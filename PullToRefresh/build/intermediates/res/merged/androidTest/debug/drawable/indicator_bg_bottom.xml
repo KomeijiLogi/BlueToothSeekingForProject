@@ -15,4 +15,4 @@
         android:topLeftRadius="@dimen/indicator_corner_radius"
         android:topRightRadius="@dimen/indicator_corner_radius" />
 
-</shape><!-- From: file:/E:/Users/Administrator/AndroidStudioProjects/BlueToothSeekingForProject/PullToRefresh/src/main/res/drawable/indicator_bg_bottom.xml --><!-- From: file:/E:/Users/Administrator/AndroidStudioProjects/BlueToothSeekingForProject/PullToRefresh/build/intermediates/bundles/debug/res/drawable/indicator_bg_bottom.xml -->
+</shape>

@@ -5,24 +5,82 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:orientation="vertical"
-    tools:context="com.example.administrator.bluetoothseekingforproject.MainPage">
-    <HorizontalScrollView
+    tools:context="com.example.administrator.bluetoothseekingforproject.MainPage"
+    android:background="@drawable/page_bg1">
+
+
+
+    <FrameLayout
+
         android:layout_width="match_parent"
-        android:layout_height="50sp">
-        <RadioGroup
-            android:id="@+id/rg_main"
-            android:orientation="horizontal"
+        android:layout_height="130sp">
+        <ImageView
+            android:background="#00000000"
+            android:id="@+id/showBackGround_img_main"
             android:layout_width="match_parent"
-            android:layout_height="50sp">
-        </RadioGroup>
-    </HorizontalScrollView>
+            android:layout_height="match_parent" />
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="40sp">
+                <TextView
+                    android:id="@+id/showMyBtInfo_txt_main"
+                    android:layout_gravity="center_horizontal"
+                    android:hint="我的蓝牙"
+                    android:textSize="20sp"
+                    android:textColor="#355eff"
+                    android:gravity="right"
+                    android:paddingLeft="40sp"
+                    android:layout_weight="0.5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40sp" />
+                <Switch
+                    android:layout_weight="0.5"
+                    android:id="@+id/openbluetooth_switch_main"
+                    android:textOff="蓝牙关闭中"
+                    android:textOn="蓝牙开启中"
+                    android:textColor="#fff"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40sp" />
+            </LinearLayout>
 
-
-    <android.support.v4.view.ViewPager
-        android:id="@+id/vp_main"
+            <Button
+                android:text="一键查询附近蓝牙设备"
+                android:textSize="15sp"
+                android:gravity="center"
+                android:textColor="#fff"
+                android:background="@drawable/round_button"
+                android:id="@+id/seekingForBt_button_main"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="60sp" />
+             <ImageView
+                 android:id="@+id/loading_image_main"
+                 android:layout_width="match_parent"
+                 android:src="@anim/loading_anim"
+                 android:scaleType="fitCenter"
+                 android:layout_height="30sp" />
+        </LinearLayout>
+    </FrameLayout>
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/showSeekBtInfo_listview_main"
+        android:layout_weight="0.8"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
+    </com.handmark.pulltorefresh.library.PullToRefreshListView>
 
-    </android.support.v4.view.ViewPager>
+    <RelativeLayout
+        android:background="#252734"
+        android:layout_weight="0.1"
+        android:layout_width="match_parent"
+        android:layout_height="70sp">
+        <include
+            layout="@layout/layout_bottom_main">
 
+        </include>
+    </RelativeLayout>
 </LinearLayout>

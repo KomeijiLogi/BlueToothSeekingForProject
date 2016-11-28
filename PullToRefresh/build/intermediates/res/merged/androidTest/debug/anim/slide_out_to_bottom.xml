@@ -19,4 +19,3 @@
     android:duration="@android:integer/config_longAnimTime"
     android:fromYDelta="0"
     android:toYDelta="100%p" />
-<!-- From: file:/E:/Users/Administrator/AndroidStudioProjects/BlueToothSeekingForProject/PullToRefresh/src/main/res/anim/slide_out_to_bottom.xml --><!-- From: file:/E:/Users/Administrator/AndroidStudioProjects/BlueToothSeekingForProject/PullToRefresh/build/intermediates/bundles/debug/res/anim/slide_out_to_bottom.xml -->

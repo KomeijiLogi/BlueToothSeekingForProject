@@ -2,7 +2,16 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.administrator.bluetoothseekingforproject" >
 
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+
     <application
+        android:name="application.BSApplication"
         android:allowBackup="true"
         android:icon="@mipmap/lollipop"
         android:label="@string/app_name"
@@ -20,6 +29,52 @@
             android:name=".MainPage"
             android:label="@string/title_activity_main_page" >
         </activity>
+        <activity
+            android:name=".Settings"
+            android:label="@string/title_activity_settings" >
+        </activity>
+        <activity
+            android:name=".CheckVersion"
+            android:label="@string/title_activity_check_version" >
+        </activity>
+        <activity
+            android:name=".BlueToothTransMissionPage"
+            android:label="@string/title_activity_blue_tooth_info_page" >
+        </activity>
+        <activity
+            android:name=".MoreFunctionPage"
+            android:label="@string/title_activity_more_page" >
+        </activity>
+        <!-- 注册静态广播接收器 -->
+        <!-- <receiver -->
+        <!-- android:enabled="false" -->
+        <!-- android:exported="false" -->
+        <!-- android:name="receiver.BluetoothReceive" > -->
+        <!-- <intent-filter android:priority="2147483647"> -->
+        <!-- <action android:name="receiver.BluetoothReceive" /> -->
+
+
+        <!-- </intent-filter> -->
+        <!-- </receiver> -->
+
+        <service
+            android:name="service.BluetoothService"
+            android:enabled="true"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="service.BluetoothService" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name=".DownloadApk"
+            android:label="@string/title_activity_download_apk" >
+        </activity>
+        <activity
+            android:name=".DetailDistance"
+            android:label="@string/title_activity_detail_distance" >
+        </activity>
+
     </application>
 
 </manifest>
