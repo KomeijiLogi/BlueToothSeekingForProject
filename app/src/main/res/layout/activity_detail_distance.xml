@@ -1,0 +1,52 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    android:background="@drawable/page_bg5"
+    tools:context="com.example.administrator.bluetoothseekingforproject.DetailDistance">
+
+    <FrameLayout
+        android:layout_gravity="center"
+        android:background="@drawable/page_matrix"
+        android:layout_width="320sp"
+        android:layout_height="320sp">
+        <tools.CustomViewByMySelf
+            android:id="@+id/customView_DetailDistance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <tools.RandomTextView
+            android:id="@+id/randomTextView_DetailDistance"
+            android:layout_centerInParent="true"
+            android:layout_width="300dp"
+            android:layout_height="300dp">
+        </tools.RandomTextView>
+    </FrameLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+        <TextView
+            android:text="坐标"
+            android:textSize="25sp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="50sp" />
+        <TextView
+            android:hint="距离"
+            android:gravity="center"
+            android:id="@+id/txt_distance_detail"
+            android:textSize="20sp"
+            android:layout_width="match_parent"
+            android:layout_height="50sp" />
+        <TextView
+            android:hint="方向"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:id="@+id/txt_direction_detail"
+            android:layout_width="match_parent"
+            android:layout_height="50sp" />
+    </LinearLayout>
+</LinearLayout>

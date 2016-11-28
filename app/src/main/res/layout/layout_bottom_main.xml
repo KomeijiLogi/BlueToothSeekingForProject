@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_width="120sp"
+        android:layout_height="wrap_content">
+        <ImageButton
+            android:id="@+id/bluetoothbutton_main"
+            android:background="@drawable/bluetoothbutton"
+            android:layout_width="60sp"
+            android:layout_height="51sp" />
+        <TextView
+            android:gravity="center_horizontal"
+            android:layout_width="60sp"
+            android:layout_height="29sp"
+            android:textSize="20sp"
+            android:textColor="#ffffff"
+            android:text="蓝牙" />
+    </LinearLayout>
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="120sp"
+        android:layout_height="wrap_content">
+        <ImageButton
+            android:id="@+id/morebutton_main"
+            android:background="@drawable/morebutton"
+            android:layout_width="60sp"
+            android:layout_height="51sp" />
+        <TextView
+            android:gravity="center_horizontal"
+            android:layout_width="60sp"
+            android:layout_height="29sp"
+            android:textSize="20sp"
+            android:textColor="#ffffff"
+            android:text="更多" />
+    </LinearLayout>
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="120sp"
+        android:layout_height="wrap_content">
+        <ImageButton
+            android:id="@+id/settingsbutton_main"
+            android:background="@drawable/settingsbutton"
+            android:layout_width="60sp"
+            android:layout_height="51sp" />
+        <TextView
+            android:gravity="center_horizontal"
+            android:layout_width="60sp"
+            android:layout_height="29sp"
+            android:textSize="20sp"
+            android:textColor="#ffffff"
+            android:text="设置" />
+    </LinearLayout>
+</LinearLayout>

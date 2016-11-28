@@ -1,0 +1,10 @@
+gen
+target
+.gradle
+build
+.idea
+maven-repository
+*.iml
+local.properties
+mvn-clone
+*.keystore

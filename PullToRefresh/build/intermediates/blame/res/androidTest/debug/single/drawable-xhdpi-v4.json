@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "G:\\Working\\AndroidStudioProjects\\BlueToothSeekingForProject\\PullToRefresh\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\indicator_arrow.png",
+        "source": "G:\\Working\\AndroidStudioProjects\\BlueToothSeekingForProject\\PullToRefresh\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\indicator_arrow.png"
+    },
+    {
+        "merged": "G:\\Working\\AndroidStudioProjects\\BlueToothSeekingForProject\\PullToRefresh\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\default_ptr_rotate.png",
+        "source": "G:\\Working\\AndroidStudioProjects\\BlueToothSeekingForProject\\PullToRefresh\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\default_ptr_rotate.png"
+    },
+    {
+        "merged": "G:\\Working\\AndroidStudioProjects\\BlueToothSeekingForProject\\PullToRefresh\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\default_ptr_flip.png",
+        "source": "G:\\Working\\AndroidStudioProjects\\BlueToothSeekingForProject\\PullToRefresh\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\default_ptr_flip.png"
+    }
+]

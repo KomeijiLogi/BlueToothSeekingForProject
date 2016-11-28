@@ -1,0 +1,10 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.administrator.bluetoothseekingforproject.MoreFunctionPage">
+
+    <item android:id="@+id/action_secure_connect" android:title="安全模式"
+        android:orderInCategory="100" app:showAsAction="never" />
+    <item android:id="@+id/action_insecure_connect" android:title="非安全模式"
+        android:orderInCategory="100" app:showAsAction="never" />
+</menu>

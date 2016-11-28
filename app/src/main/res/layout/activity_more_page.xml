@@ -1,0 +1,109 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.administrator.bluetoothseekingforproject.MoreFunctionPage"
+    android:background="@drawable/page_bg2">
+
+    <LinearLayout
+
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ll_more">
+        <ListView
+            android:id="@+id/in_lv_more"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:stackFromBottom="true"
+            android:transcriptMode="alwaysScroll" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/edit_text_out_more"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/button_send_more"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="发送" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_more"
+        android:background="#252734"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <LinearLayout
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_width="120sp"
+            android:layout_height="wrap_content">
+            <ImageButton
+                android:id="@+id/bluetoothbutton_more"
+                android:background="@drawable/bluetoothbutton"
+                android:layout_width="60sp"
+                android:layout_height="51sp" />
+            <TextView
+                android:gravity="center_horizontal"
+                android:layout_width="60sp"
+                android:layout_height="29sp"
+                android:textSize="20sp"
+                android:textColor="#ffffff"
+                android:text="蓝牙" />
+        </LinearLayout>
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_width="120sp"
+            android:layout_height="wrap_content">
+            <ImageButton
+                android:id="@+id/morebutton_more"
+                android:background="@drawable/morebutton"
+                android:layout_width="60sp"
+                android:layout_height="51sp" />
+            <TextView
+                android:gravity="center_horizontal"
+                android:layout_width="60sp"
+                android:layout_height="29sp"
+                android:textSize="20sp"
+                android:textColor="#ffffff"
+                android:text="更多" />
+        </LinearLayout>
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_width="120sp"
+            android:layout_height="wrap_content">
+            <ImageButton
+                android:id="@+id/settingsbutton_more"
+                android:background="@drawable/settingsbutton"
+                android:layout_width="60sp"
+                android:layout_height="51sp" />
+            <TextView
+                android:gravity="center_horizontal"
+                android:layout_width="60sp"
+                android:layout_height="29sp"
+                android:textSize="20sp"
+                android:textColor="#ffffff"
+                android:text="设置" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
